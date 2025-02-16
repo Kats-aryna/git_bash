@@ -1,0 +1,25 @@
+
+touch bash1.txt
+cd ~/Documents/HW_bash
+pwd
+mkdir test1
+cd test1
+touch 1.txt 2.txt 3.txt
+ls
+mkdir test2
+rmdir test2
+rm test1/2.txt
+mkdir test3
+touch test3/file1 test3/file2
+rm -r test3
+mkdir test4
+mv test1/1.txt test1/3.txt test4
+echo 'line' >> test4/1.txt
+echo 'line' >> test4/1.txt
+echo 'line' >> test4/1.txt
+cat test4/1.txt
+echo 'line' >> test4/3.txt
+echo 'line' >> test4/3.txt
+echo 'line' >> test4/3.txt
+cat test4/1.txt test4/3.txt
+nano test4/1.txt

@@ -1,0 +1,20 @@
+touch bash2.txt
+cd ~/Documents/HW_bash
+mkdir test3
+echo -e 'row1\nrow2\nrow3\nrow4' > test3/4.txt
+echo -e 'row1\nrow2\nrow3\nrow4' > test3/5.txt
+echo -e 'row1\nrow2\nrow3\nrow4' > test3/6.txt
+grep 'row2' test3/5.txt
+grep 'row' test3/*
+grep -c 'row' test3/6.txt
+find test3 -name '5.txt'
+find test3 -name '5.txt' -exec rm {} \;
+echo 'test' > test3/4.txt
+sed -i 's/test/fail/g' test3/4.txt
+echo test >> test3/4.txt
+ps aux
+kill 666
+ping rusau.net
+ping -n 5 rusau.net
+curl -X GET 'https://petstore.swagger.io/v2/pet/findByStatus?status=available'
+curl -X POST https://petstore.swagger.io/v2/pet -H Content-Type: application/json -d '{id:99999,category:{id: 0,name: string},name: doggie,photoUrls: [string],tags: [{id: 0, name: string} ],status: available}'
